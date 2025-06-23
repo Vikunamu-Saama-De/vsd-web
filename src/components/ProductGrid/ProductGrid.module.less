@@ -1,0 +1,54 @@
+@import '../../styles/variables.less';
+
+.productGridContainer {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.sectionSubtitle {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.productCol {
+  margin-bottom: 24px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .sectionHeader {
+    margin-bottom: 24px;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+  }
+  
+  .sectionSubtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productGridContainer {
+    margin-bottom: 32px;
+  }
+  
+  .sectionTitle {
+    font-size: 20px;
+  }
+}
