@@ -4,10 +4,65 @@ import SlideItem from "../components/slides/FirstSlide/SlideItem";
 import ServicesBanner from "../components/ServicesBanner/ServicesBanner";
 import ProductGrid from "../../../components/ProductGrid/ProductGrid";
 import CategoryGrid from "../../../components/CategoryGrid/CategoryGrid";
+import PromoGrid from "../../../components/PromoBanners/PromoGrid";
 import type { ProductCardProps } from "../../../components/ProductCard/ProductCard";
 import type { CategoryCircleProps } from "../../../components/CategoryCircle/CategoryCircle";
+import type { PromoBannerProps } from "../../../components/PromoBanners/PromoBanner";
 
 const Home = () => {
+  // Sample promo banners data
+  const promoBanners: PromoBannerProps[] = [
+    {
+      id: "mobile-promo",
+      image: "/promos/mobile-phones.png",
+      title: "MOBILE PHONES",
+      description: "The latest smartphones with cutting-edge features",
+      backgroundColor: "#514b6c",
+      textColor: "#ffffff",
+      url: "/category/mobile",
+    },
+    {
+      id: "laptop-promo",
+      image: "/promos/laptop.png",
+      title: "Premium Laptops",
+      subtitle: "NEW ARRIVALS",
+      buttonText: "Shop Now",
+      backgroundColor: "#f8e8dd",
+      textColor: "#333333",
+      url: "/category/laptops",
+    },
+    {
+      id: "samsung-promo",
+      image: "/promos/samsung.png",
+      title: "SAMSUNG",
+      subtitle: "EXCLUSIVE OFFER",
+      description: "The Latest Range is Now Available",
+      buttonText: "View Products",
+      backgroundColor: "#f5f5f5",
+      textColor: "#333333",
+      url: "/brand/samsung",
+    },
+    {
+      id: "washing-machine-promo",
+      image: "/promos/washing-machine.png",
+      title: "WASHING MACHINE",
+      buttonText: "Shop Now",
+      backgroundColor: "#1a365d",
+      textColor: "#ffffff",
+      url: "/category/appliances/washing-machines",
+    },
+    {
+      id: "projector-promo",
+      image: "/promos/projector.png",
+      title: "SINGER LUMIO",
+      subtitle: "NEW LAUNCH",
+      description: "Portable Smart Projector",
+      backgroundColor: "#f0f0f0",
+      textColor: "#333333",
+      url: "/products/singer-lumio-projector",
+    },
+  ];
+
   // Sample category data
   const topCategories: CategoryCircleProps[] = [
     {
@@ -142,6 +197,14 @@ const Home = () => {
           subtitle="Explore our selection of premium laptops and electronics"
           columns={{ xs: 1, sm: 2, md: 2, lg: 4, xl: 4 }}
           onAddToCart={handleAddToCart}
+        />
+      </div>
+      <div className={styles.promoSection}>
+        <PromoGrid
+          banners={promoBanners}
+          title="Featured Collections"
+          subtitle="Discover our exclusive collections and special offers"
+          layout="mixed"
         />
       </div>
     </div>

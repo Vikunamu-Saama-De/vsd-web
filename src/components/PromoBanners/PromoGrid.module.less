@@ -1,0 +1,82 @@
+@import '../../styles/variables.less';
+
+.promoGridContainer {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  position: relative;
+  display: inline-block;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: @primary-color;
+    border-radius: 2px;
+  }
+}
+
+.sectionSubtitle {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin: 16px auto 0;
+}
+
+.secondaryRow {
+  margin-top: 24px;
+}
+
+.additionalRow {
+  margin-top: 24px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .sectionHeader {
+    margin-bottom: 24px;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+    
+    &:after {
+      width: 50px;
+      height: 2px;
+    }
+  }
+  
+  .sectionSubtitle {
+    font-size: 14px;
+    margin-top: 14px;
+  }
+  
+  .secondaryRow {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promoGridContainer {
+    margin-bottom: 32px;
+  }
+  
+  .sectionTitle {
+    font-size: 20px;
+  }
+}
