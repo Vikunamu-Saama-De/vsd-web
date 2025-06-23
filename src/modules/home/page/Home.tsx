@@ -1,6 +1,7 @@
 import styles from "./Home.module.less";
 import HomeSlider from "../components/HomeSlider/HomeSlider";
 import SlideItem from "../components/slides/FirstSlide/SlideItem";
+import ServicesBanner from "../components/ServicesBanner/ServicesBanner";
 
 const Home = () => {
   const sliderItems = [
@@ -41,12 +42,7 @@ const Home = () => {
           />
         ))}
       </HomeSlider>
-      <div className={styles.content}>
-        <div className={styles.contentWrapper}>
-          <h1>Welcome to Singer</h1>
-          <p>Discover our latest products and services</p>
-        </div>
-      </div>
+      <ServicesBanner />
     </div>
   );
 };
