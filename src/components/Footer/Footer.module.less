@@ -1,0 +1,139 @@
+.footer {
+  background-color: #001529;
+  color: #fff;
+  padding: 48px 0 24px;
+  width: 100%;
+  
+  .footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerColumns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .footerColumn {
+    min-width: 200px;
+    margin-bottom: 24px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      color: #fff;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 8px;
+        
+        a {
+          color: rgba(255, 255, 255, 0.65);
+          font-size: 14px;
+          text-decoration: none;
+          transition: color 0.3s;
+          
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .companyInfo {
+    margin-bottom: 24px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      
+      img {
+        height: 32px;
+        margin-right: 8px;
+      }
+      
+      h2 {
+        margin: 0;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.65);
+      font-size: 14px;
+      max-width: 300px;
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+
+  .socialLinks {
+    display: flex;
+    margin-top: 16px;
+    
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      margin-right: 12px;
+      transition: background-color 0.3s;
+      
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
+  .divider {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 16px 0;
+  }
+
+  .bottomBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    .copyright {
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 14px;
+    }
+    
+    .bottomLinks {
+      display: flex;
+      
+      a {
+        color: rgba(255, 255, 255, 0.45);
+        font-size: 14px;
+        margin-left: 24px;
+        text-decoration: none;
+        transition: color 0.3s;
+        
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

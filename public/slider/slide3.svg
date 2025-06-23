@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="600" viewBox="0 0 1920 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="600" fill="#F0F2F5"/>
+  <rect x="0" y="0" width="1920" height="600" fill="#2196F3" opacity="0.1"/>
+  <text x="960" y="300" font-family="Arial" font-size="48" font-weight="bold" text-anchor="middle" fill="#333">Premium Quality</text>
+  <text x="960" y="360" font-family="Arial" font-size="24" text-anchor="middle" fill="#666">Crafted with excellence and attention to detail</text>
+</svg>
