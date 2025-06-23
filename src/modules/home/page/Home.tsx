@@ -3,9 +3,51 @@ import HomeSlider from "../components/HomeSlider/HomeSlider";
 import SlideItem from "../components/slides/FirstSlide/SlideItem";
 import ServicesBanner from "../components/ServicesBanner/ServicesBanner";
 import ProductGrid from "../../../components/ProductGrid/ProductGrid";
+import CategoryGrid from "../../../components/CategoryGrid/CategoryGrid";
 import type { ProductCardProps } from "../../../components/ProductCard/ProductCard";
+import type { CategoryCircleProps } from "../../../components/CategoryCircle/CategoryCircle";
 
 const Home = () => {
+  // Sample category data
+  const topCategories: CategoryCircleProps[] = [
+    {
+      id: "mobile",
+      image: "/categories/mobile.png",
+      name: "Mobile",
+      url: "/category/mobile",
+    },
+    {
+      id: "cosmetics",
+      image: "/categories/cosmetics.png",
+      name: "Cosmetics",
+      url: "/category/cosmetics",
+    },
+    {
+      id: "electronics",
+      image: "/categories/electronics.png",
+      name: "Electronics",
+      url: "/category/electronics",
+    },
+    {
+      id: "furniture",
+      image: "/categories/furniture.png",
+      name: "Furniture",
+      url: "/category/furniture",
+    },
+    {
+      id: "watches",
+      image: "/categories/watches.png",
+      name: "Watches",
+      url: "/category/watches",
+    },
+    {
+      id: "decor",
+      image: "/categories/decor.png",
+      name: "Decor",
+      url: "/category/decor",
+    },
+  ];
+
   // Sample featured products data
   const featuredProducts: Omit<ProductCardProps, "onAddToCart">[] = [
     {
@@ -86,6 +128,13 @@ const Home = () => {
         ))}
       </HomeSlider>
       <ServicesBanner />
+      <div className={styles.categorySection}>
+        <CategoryGrid
+          categories={topCategories}
+          title="Shop From Top Categories"
+          subtitle="Browse our most popular product categories"
+        />
+      </div>
       <div className={styles.productsSection}>
         <ProductGrid
           products={featuredProducts}
